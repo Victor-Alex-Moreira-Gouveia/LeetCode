@@ -13,4 +13,5 @@ Sua principal função é avaliar o programador apartir de sua capacidade de sol
 De acordo com o padrão de desafios geralmente está ligado com a manipulação de dados, onde o programador utiliza-se de uma tecnológia e lógica para solucionar o problema de forma inteligente.
 
 **Feito por: Victor Alex Moreira Gouveia**
+<br>
 **Data-Inicio: 18/04/2025**

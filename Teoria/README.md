@@ -29,12 +29,16 @@ letra = nome[0] # Vai armazenar a primeira letra que nesse caso é 'V'
 print(letra) # nesse caso o algoritmo é O(1)
 ```
 
+<br>
+
 #### Exemplo prático em python O(n)
 ```python
 numeros = [0, 15, 38, 84, 35]
 for i in numeros: # O(n)
     print(i) # O(1)
 ```
+
+<br>
 
 #### Exemplo prático em python O(log n)
 
@@ -58,6 +62,8 @@ numeros = [2, 3, 5, 7, 11, 13, 17]
 resultado = busca_binaria(numeros, 7)  # Nesse caso, o algoritmo é O(log n)
 print(resultado)  # Retorna o índice do número 7 na lista, que é 3
 ```
+
+<br>
 
 #### Exemplo prático em python O(n²)
 ```python
