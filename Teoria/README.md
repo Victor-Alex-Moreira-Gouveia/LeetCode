@@ -4,7 +4,7 @@ Aqui vai está o conhecimento básico para conseguir entender e fazer atividade 
 
 **Pré-requisitos:**
 - Entender a lógica de programação.
-- Saber linguagem de programação python.
+- Saber linguagem de programação python ou C.
 - Ter paciência.
 - Dedicação.
 - Vontade de aprender.
@@ -21,8 +21,10 @@ ___
     - O > Tempo
     - n > Quantidade de entrada de dados
 
-#### Exemplo prático em python O(1)
+#### Exemplo prático O(1)
+<br>
 
+**Python**
 ```python
 nome = "Victor Alex"
 letra = nome[0] # Vai armazenar a primeira letra que nesse caso é 'V'
@@ -31,7 +33,24 @@ print(letra) # nesse caso o algoritmo é O(1)
 
 <br>
 
+**C**
+```c
+#include <stdio.h>
+
+int main(){
+    char nome[] = "Victor Alex";
+    char letra = nome[0];
+    printf("%c", letra);
+    return 0;
+}
+```
+
+<br>
+
 #### Exemplo prático em python O(n)
+<br>
+
+**Python**
 ```python
 numeros = [0, 15, 38, 84, 35]
 for i in numeros: # O(n)
@@ -40,8 +59,24 @@ for i in numeros: # O(n)
 
 <br>
 
-#### Exemplo prático em python O(log n)
+**C**
+```c
+#include <stdio.h>
+int main(){
+    int numero[4] = {0, 15, 38, 84, 35};
+    for (int i = 0; i < 5; i++){ // O(n)
+        printf("%d° elemento: %d", i, numero[i]); // O(1)
+    }
+    return 0;
+}
+```
 
+<br>
+
+#### Exemplo prático em python O(log n)
+<br>
+
+**Python**
 ```python
 def busca_binaria(lista, alvo):
     esquerda = 0
@@ -65,7 +100,15 @@ print(resultado)  # Retorna o índice do número 7 na lista, que é 3
 
 <br>
 
+**C**
+> Descupe não tenho conhecimento o sufuciente para converter isso mas estou estudado e me esforçando para melhorar
+
+<br>
+
 #### Exemplo prático em python O(n²)
+<br>
+
+**Python**
 ```python
 def encontrar_pares(lista):
     for i in range(len(lista)):  # O(n)
@@ -76,3 +119,24 @@ def encontrar_pares(lista):
 numeros = [1, 2, 3]
 encontrar_pares(numeros)
 ```
+
+<br>
+
+**C**
+> Descupe não tenho conhecimento o sufuciente para converter isso mas estou estudado e me esforçando para melhorar.
+
+<br>
+___
+
+## Tipos de estrutura de dados
+**Descrição:** São diferentes formas de se organizar os dados, e caso a forma de organização for correta isso pode proporcionar um bom desempenho. Lembrando que cada forma de organização foi feita para um cenario em especifico então escolha com cuidado se não pode ocasionar em uma grande dor de cabeça.
+
+- Array => Conjunto de dados armazenado em formato de vetor ou matrix.
+<br>
+- Pilha => Dado organidado de forma que o primeiro dado que entrou e o ultimo a sair.
+<br>
+- Fila => Semelhante ao formato de atendimento o primeiro a entrar e o primeiro a sair.
+<br>
+- Árvore binaria e árvore binaria de busca => Usado para organizar dados não lineares.
+<br>
+- HashMap => Estrutura que guarda dado em formato chave e valor.
